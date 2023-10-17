@@ -8,8 +8,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link rel="stylesheet" href="style.css">
-<title>Title</title>
+<title>My Park Page</title>
 </head>
+
 <body>
 <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-primary" style="background-color: orange;">
@@ -56,7 +57,7 @@
     <br>
 
 <!-- Slideshow -->
-<div id="captioned-gallery">
+<div id="captioned-gallery mt-50">
 	<figure class="slider">
 		<figure>
 			<img src="images/Bridge.jpg" alt>
@@ -88,6 +89,7 @@
 </div>
 
 <!-- Gallery -->
+<div><h1 class="gallery d-flex justify-content-center" style="position: relative; color:beige">Gallery</h1></div>
 <div class="row my-row">
     <div class="col p-3 text-center"><img src="images/img1.jpeg"></div>
     <div class="col p-3 text-center"><img src="images/img3.jpeg"></div>
@@ -97,25 +99,13 @@
     <div class="col p-3 text-center"><img src="images/img9.jpeg"></div>
 </div>
 
-  <!-- The expanding image container -->
-  <div class="container">
-    <!-- Close the image -->
-    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-  
-    <!-- Expanded image -->
-    <img id="expandedImg" style="width:100%">
-  
-    <!-- Image text -->
-    <div id="imgtext"></div>
-  </div>
 <!-- BOTTOM PART -->
 <footer >
-    <div class="bottom" id="contact">
-        <div class="map">
+    <div class="row bottom" id="contact" style="height: auto;">
+        <div class="col col-sm-12 col-md-6 map ">
             <img src="images/chicago map screenshot.png" alt="Map image" class="mapimg">
         </div>
-        <div class="footinfo" style="color: white;">
-            <br>
+        <div class="col col-sm-12 col-md-3 d-flex footinfo justify-content-center align-items-center" style="color: white;">
             <h4>Contact</h4>
             <p class="email">
                 <p class="tiny">Email : skypark@gmail.com</p>
@@ -128,7 +118,7 @@
             </p>
         </div>
   
-        <div class="footinfo" style="color: white">
+        <div class="col col-sm-12 col-md-3 d-flex footinfo justify-content-center align-items-center" style="color: white">
             <br>
             <h4>Social</h4>
             <p class="media">

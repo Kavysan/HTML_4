@@ -65,88 +65,12 @@ figure.slider figure figcaption {
 }
 
 .footinfo{
-    /* border: 2px solid red; */
     display:flex;
     flex-direction:column;
     align-items: center;
 }
 
-.foothead{
-    font-size:2.5em;
-    color: orange;
-}
-
-.tiny{
-    margin:3px;
-}
 
 i{
     color: beige;
-}
-
-@media only screen and (max-width: 400px) {
- 
-    .bottom {
-        flex-direction: column;
-        align-items: center;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-
-    .mapimg {
-        width: 100%;
-        max-width: 350px;
-        margin-top: 20px;
-    }
-
-    .footinfo {
-        margin: 20px 0;
-    }
-}
-@media only screen and (min-width:400px) and (max-width: 767px) {
-    
-    
-    .bottom {
-        flex-direction: column;
-        align-items: center;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-
-    .mapimg {
-        width: 100%;
-        max-width: 350px;
-        margin-top: 20px;
-    }
-
-    .footinfo {
-        margin: 20px 0;
-    }
-}
-@media only screen and (min-width: 768px) and (max-width:1023px){
-    .bottom {
-        flex-direction: row;
-    }
-
-    .mapimg {
-        width: 100%;
-    }
-
-    .footinfo {
-        /* border: 2px solid red; */
-        margin: 10px;
-    }
-
-    .wrapper {
-        /* grid-template-columns: 1fr;  */
-        grid-gap: 20px;
-        width:auto;
-    }
-
-    
-}
-
-.my-row{
-    display: flex;
-
 }
