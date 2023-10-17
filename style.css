@@ -1,0 +1,152 @@
+@import url(https://fonts.googleapis.com/css?family=Istok+Web);
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+a{
+    text-decoration: none;
+    color : white;
+}
+
+body, figure { 
+  margin: 0; background: #101010;
+  font-family: Istok Web, sans-serif;
+  font-weight: 100;
+}
+div#captioned-gallery { 
+  width: 100%; overflow: hidden; 
+}
+figure.slider { 
+  position: relative; width: 500%;
+  font-size: 0; animation: 30s slidy infinite; 
+}
+figure.slider figure { 
+  width: 20%; height: auto;
+  display: inline-block;  position: inherit; 
+}
+figure.slider img { width: 100%; height: auto; }
+figure.slider figure figcaption { 
+  position: absolute; bottom: 0;
+  background: rgba(0,0,0,0.4);
+  color: #fff; width: 100%;
+  font-size: 2rem; padding: .6rem; 
+}
+
+
+
+.bottom{
+    background-color: black;
+    color:white;
+    display: flex;
+    flex-direction:row;
+    padding-top:30px;
+    padding-bottom: 30px;
+    justify-content:space-evenly;
+}
+
+.map{
+    width: 300px;
+    padding: 0px;
+
+}
+
+.mapimg{
+    width:350px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.footinfo{
+    /* border: 2px solid red; */
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.foothead{
+    font-size:2.5em;
+    color: orange;
+}
+
+.tiny{
+    margin:3px;
+}
+
+i{
+    color: beige;
+}
+
+@media only screen and (max-width: 400px) {
+ 
+    .bottom {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .mapimg {
+        width: 100%;
+        max-width: 350px;
+        margin-top: 20px;
+    }
+
+    .footinfo {
+        margin: 20px 0;
+    }
+}
+@media only screen and (min-width:400px) and (max-width: 767px) {
+    
+    
+    .bottom {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .mapimg {
+        width: 100%;
+        max-width: 350px;
+        margin-top: 20px;
+    }
+
+    .footinfo {
+        margin: 20px 0;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width:1023px){
+    .bottom {
+        flex-direction: row;
+    }
+
+    .mapimg {
+        width: 100%;
+    }
+
+    .footinfo {
+        /* border: 2px solid red; */
+        margin: 10px;
+    }
+
+    .wrapper {
+        /* grid-template-columns: 1fr;  */
+        grid-gap: 20px;
+        width:auto;
+    }
+
+    
+}
+
+.my-row{
+    display: flex;
+
+}

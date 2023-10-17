@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<title>Title</title>
+</head>
+<body>
+<!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-primary" style="background-color: orange;">
+        <div class="container-fluid nav-container">
+          <a class="navbar-brand" href="#"><h2>THE NEW SKYPARK</h2></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">SkyPark</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Zipline</a></li>
+                    <li><a class="dropdown-item" href="#">Rafting</a></li>
+                    <li><a class="dropdown-item" href="#">Skylift</a></li>
+                    <li><a class="dropdown-item" href="#">Alpine Coaster</a></li>
+                    <li><a class="dropdown-item" href="#">Sky Bridge</a></li>
+                  
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Plan Your Visit</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Tickets</a></li>
+                    <li><a class="dropdown-item" href="#">Things To Do</a></li>
+                    <li><a class="dropdown-item" href="#">Parking</a></li>
+                    <li><a class="dropdown-item" href="#">Groups</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Contact</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+    </nav>
+    <br>
+
+<!-- Slideshow -->
+<div id="captioned-gallery">
+	<figure class="slider">
+		<figure>
+			<img src="images/Bridge.jpg" alt>
+			<figcaption>Sky Bridge - North America's Longest Sky Bridge</figcaption>
+		</figure>
+		<figure>
+			<img src="images/Rafting.jpg" alt>
+			<figcaption>Rafting - An adventurous 5 mile rafting experience</figcaption>
+		</figure>
+		<figure>
+			<img src="images/Skylift.jpg" alt>
+			<figcaption>Skylift - Enjoy the beautiful view of the mountains from above</figcaption>
+		</figure>
+        <figure>
+			<img src="images/Alpinecoaster.jpg" alt>
+			<figcaption>Alpine Coaster - Enjoy the fresh air and best view from our mountain coaster</figcaption>
+		</figure>
+        <figure>
+			<img src="images/Zipline.jpg" alt>
+			<figcaption>Zipline - A thrilling 0.5 mile zipline above the beautiful mountains</figcaption>
+		</figure>
+	</figure>
+</div>
+
+<!-- Two buttons-->
+<div class="d-grid gap-3 p-5">
+    <button class="btn btn-primary" type="button">Buy Tickets</button>
+    <button class="btn btn-primary" type="button">Park Hours</button>
+</div>
+
+<!-- Gallery -->
+<div class="row my-row">
+    <div class="col p-3 text-center"><img src="images/img1.jpeg"></div>
+    <div class="col p-3 text-center"><img src="images/img3.jpeg"></div>
+    <div class="col p-3 text-center"><img src="images/img5.jpeg"></div>
+    <div class="col p-3 text-center"><img src="images/img7.jpeg"></div>
+    <div class="col p-3 text-center"><img src="images/img8.jpeg"></div>
+    <div class="col p-3 text-center"><img src="images/img9.jpeg"></div>
+</div>
+
+  <!-- The expanding image container -->
+  <div class="container">
+    <!-- Close the image -->
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  
+    <!-- Expanded image -->
+    <img id="expandedImg" style="width:100%">
+  
+    <!-- Image text -->
+    <div id="imgtext"></div>
+  </div>
+<!-- BOTTOM PART -->
+<footer >
+    <div class="bottom" id="contact">
+        <div class="map">
+            <img src="images/chicago map screenshot.png" alt="Map image" class="mapimg">
+        </div>
+        <div class="footinfo" style="color: white;">
+            <br>
+            <h4>Contact</h4>
+            <p class="email">
+                <p class="tiny">Email : skypark@gmail.com</p>
+            </p>
+            <p class="location">
+                <p class="tiny">Address : Chicago, USA</p>
+            </p>
+            <p class="phone">
+                <p class="tiny">Phone: (470) 123 4567</p>
+            </p>
+        </div>
+  
+        <div class="footinfo" style="color: white">
+            <br>
+            <h4>Social</h4>
+            <p class="media">
+                <a href="#"><p class="tiny"><i class="fab fa-facebook"></i> Facebook</p></a>
+            </p>
+            <p class="media">
+                <a href="#"><p class="tiny"><i class="fab fa-instagram"></i> Instagram</p></a>
+            </p>
+            <p class="media">
+                <a href="#"><p class="tiny"><i class="fab fa-youtube"></i> Youtube</p></a>
+            </p>
+            <p class="media">
+                <a href="#"><p class="tiny"><i class="fab fa-twitter"></i> Twitter</p></a>
+            </p>
+            
+            
+        </div>
+    </div>  
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html> 
